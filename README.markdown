@@ -27,3 +27,10 @@ License?
 
 This piece of software is licensed under the GNU GPLv3 License
 http://www.gnu.org/licenses/gpl.html
+
+Status
+------
+
+This project is under developement. The current release is in pre-alpha.
+The current objective is to implement the ECMAScript 5 additions to provide support for ECMAScript 3 based browsers like IE7 and IE8.
+The next objective is to implement standard extensions that are specific to the firefox browser.
