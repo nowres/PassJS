@@ -4,7 +4,7 @@
  * 
  * @author: Nowres RAFID <nowres.rafed@gmail.com>
  * @version: 0.1.0
- * /
+ */
 
 /* TODO: sobj */
 Array.prototype.forEach = function(func, sobj) {
