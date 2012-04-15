@@ -112,6 +112,16 @@ function test_array_lastIndexOf() {
     ok(arr.lastIndexOf("test2",1), 0, "Array.lastIndexOf 4");
 }
 
+function test_array_isArray() {
+    ok(Array.isArray(), false, "Array.isArray 1");
+    ok(Array.isArray(3), false, "Array.isArray 2");
+    ok(Array.isArray("test"), false, "Array.isArray 3");
+    ok(Array.isArray(undefined), false, "Array.isArray 4");
+    ok(Array.isArray({1: 2}), false, "Array.isArray 5");
+    ok(Array.isArray([]), true, "Array.isArray 6");
+    ok(Array.isArray([1, 2, 3]), true, "Array.isArray 7");
+}
+
 function test_array() {
     info('Testing arrays');
     test_array_map();
@@ -121,5 +131,6 @@ function test_array() {
     test_array_some();
     test_array_indexOf();
     test_array_lastIndexOf();
+    test_array_isArray();
     info('Testing arrays done');
 }

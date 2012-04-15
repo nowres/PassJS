@@ -80,3 +80,16 @@ Array.prototype.lastIndexOf = function(item, offset) {
     }
     return -1;
 };
+
+Array.isArray = function (arr) {
+    if (arr instanceof Array) {
+        return true
+    } else {
+        return false;
+    }
+}
+
+/* TODO:
+Array.prototype.reduce;
+Array.prototype.reduceRight;
+*/
