@@ -27,9 +27,8 @@ Array.prototype.filter = function(func, sobj) {
     for (i = 0; i < this.length; i++) {
         f = func(this[i], i, this);
         if (f) {
-            a[a.length] = f;
+            a[a.length] = this[i];
         }
-        
     }
     return a;
 };
