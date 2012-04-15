@@ -21,3 +21,9 @@ Why ?
 -----
 
 This repository was created because it was needed :)
+
+License?
+--------
+
+This piece of software is licensed under the GNU GPLv3 License
+http://www.gnu.org/licenses/gpl.html
