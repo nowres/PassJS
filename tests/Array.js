@@ -1,3 +1,12 @@
+/* Array.js
+ * This file is part of the DeltaJS library
+ * This file is part of the test suite
+ * This file is licensed under the GNU GPLv3 license
+ * 
+ * @author: Nowres RAFID <nowres.rafed@gmail.com>
+ * @version: 0.6.0
+ */
+
 function array_eq(a, b) {
     var i;
     if (a.length === b.length) {
@@ -85,6 +94,24 @@ function test_array_some() {
     ok(array_eq(arr, [1, 2, 3, 1, 44, 0]), true, "Array.some 4");
 }
 
+function test_array_indexOf() {
+    var arr = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+    ok(arr.indexOf(4), 3, "Array.indexOf 1");
+    ok(arr.indexOf(4, 4), 5, "Array.indexOf 2");
+    ok(arr.indexOf(16), -1, "Array.indexOf 3");
+    arr = ["test2", "test3", "test1", "test2"];
+    ok(arr.indexOf("test2",1), 3, "Array.indexOf 4");
+}
+
+function test_array_lastIndexOf() {
+    var arr = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+    ok(arr.lastIndexOf(4), 5, "Array.lastIndexOf 1");
+    ok(arr.lastIndexOf(4, 4), 3, "Array.lastIndexOf 2");
+    ok(arr.lastIndexOf(16), -1, "Array.lastIndexOf 3");
+    arr = ["test2", "test3", "test1", "test2"];
+    ok(arr.lastIndexOf("test2",1), 0, "Array.lastIndexOf 4");
+}
+
 function test_array() {
     info('Testing arrays');
     test_array_map();
@@ -92,5 +119,7 @@ function test_array() {
     test_array_forEach();
     test_array_every();
     test_array_some();
+    test_array_indexOf();
+    test_array_lastIndexOf();
     info('Testing arrays done');
 }

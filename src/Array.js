@@ -3,7 +3,7 @@
  * This file is licensed under the GNU GPLv3 license
  * 
  * @author: Nowres RAFID <nowres.rafed@gmail.com>
- * @version: 0.1.0
+ * @version: 0.6.0
  */
 
 /* TODO: sobj */
@@ -53,4 +53,30 @@ Array.prototype.some = function(func, sobj) {
         }
     }
     return false;
+};
+
+Array.prototype.indexOf = function(item, offset) {
+    var i;
+    if (offset === undefined) {
+        offset = 0;
+    }
+    for (i = offset; i < this.length; i++) {
+        if (item === this[i]) {
+            return i;
+        }
+    }
+    return -1;
+};
+
+Array.prototype.lastIndexOf = function(item, offset) {
+    var i;
+    if (offset === undefined) {
+        offset = this.length - 1;
+    }
+    for (i = offset; i >= 0 ; i--) {
+        if (item === this[i]) {
+            return i;
+        }
+    }
+    return -1;
 };
