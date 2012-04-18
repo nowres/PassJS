@@ -1,5 +1,5 @@
 /* Array.js
- * This file is part of the DeltaJS library
+ * This file is part of the PassJS library
  * This file is licensed under the GNU GPLv3 license
  * 
  * @author: Nowres RAFID <nowres.rafed@gmail.com>

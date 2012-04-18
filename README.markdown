@@ -1,4 +1,4 @@
-DeltaJS pre-alpha
+PassJS pre-alpha
 ====================
 
 What ?
