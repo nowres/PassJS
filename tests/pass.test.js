@@ -43,4 +43,8 @@ if (test_array !== undefined) {
     test_array();
 }
 
+if (test_string !== undefined) {
+    test_string();
+}
+
 end_test();
