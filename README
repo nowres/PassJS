@@ -1,5 +1,5 @@
-PassJS pre-alpha
-====================
+PassJS alpha
+============
 
 What ?
 ------
