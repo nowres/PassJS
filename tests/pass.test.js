@@ -47,4 +47,8 @@ if (test_string !== undefined) {
     test_string();
 }
 
+if (test_date !== undefined) {
+    test_date();
+}
+
 end_test();
