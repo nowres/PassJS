@@ -1,0 +1,5 @@
+Summary of changes for version 0.3.0:
+
+* Implementing Date.prototype.toISOString
+* Implementing Date.prototype.toJSON
+* Adding conditional functions definition
