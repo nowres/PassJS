@@ -34,8 +34,7 @@ if(!Date.prototype.toISOString) {
 	};
 }
 
-if(!Date.prototype.toJSON) {
-	Date.prototype.toJSON = function () {
-		return this.toISOString();
-	};
-}
+//We Override toJSON definition to avoid a problem in IE
+Date.prototype.toJSON = function () {
+	return this.toISOString();
+};
