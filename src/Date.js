@@ -38,3 +38,10 @@ if(!Date.prototype.toISOString) {
 Date.prototype.toJSON = function () {
 	return this.toISOString();
 };
+
+/* Date type definitions **/
+if (!Date.now) {
+	Date.now = function() {
+		return new Date().getTime();
+	}
+}
